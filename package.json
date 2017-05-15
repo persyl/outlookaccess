@@ -1,0 +1,22 @@
+{
+  "name": "OutlookAccess",
+  "version": "1.0.0",
+  "description": "Mailapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hackday"
+  ],
+  "author": "Per Lundkvist",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "node-outlook": "^1.1.6",
+    "simple-oauth2": "^1.2.0"
+  }
+}

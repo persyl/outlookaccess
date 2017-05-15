@@ -1,0 +1,25 @@
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+<body>
+  <div class="container">
+    <div id="userFormArea" class="row">
+      <div class="col-md-12">
+        <h1>Inkorgen</h1>
+        <table class="mail-list">
+          <tr>
+            <th>From</th><th>Subject</th><th>Received</th>
+          </tr>
+          <% messages.forEach(function(message) { %>
+            <tr class="mail-list__row<%= message.IsRead ? '':' mail-list__row--unread' %>">
+              <td><%= message.From ? message.From.EmailAddress.Name : 'NONE' %></td>
+              <td><%= message.Subject %></td>
+              <td><%= message.DisplayDate %></td>
+            </tr>
+          <% }); %>
+        </table>
+      </div>
+    </div>
+</body>
+</html>
